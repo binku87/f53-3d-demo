@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>床头柜 F53 真贴图</title>
+<style>
+:root{--bg:#f6f5f1;--fg:#222}
+@media(prefers-color-scheme:dark){:root{--bg:#161614;--fg:#e8e6df}}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:15px/1.4 -apple-system,"PingFang SC",sans-serif}
+body{display:flex;flex-direction:column}
+h1{font-size:15px;font-weight:600;margin:0;padding:12px 16px}
+model-viewer{flex:1;width:100%;min-height:0;--poster-color:transparent;background:var(--bg)}
+model-viewer:not(:defined){background:var(--bg) url(poster.webp) center/contain no-repeat}
+</style>
+<link rel="preload" as="image" href="poster.webp">
+<script>self.ModelViewerElement=self.ModelViewerElement||{};self.ModelViewerElement.meshoptDecoderLocation="meshopt_decoder.js"</script>
+<script>(function(){var u=["https://cdn.bootcdn.net/ajax/libs/model-viewer/3.5.0/model-viewer.min.js","https://cdn.staticfile.net/model-viewer/3.5.0/model-viewer.min.js","https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"],i=0;function go(){if(i>=u.length)return;var t=document.createElement("script");t.type="module";t.src=u[i++];t.onerror=go;document.head.appendChild(t)}go()})()</script>
+</head><body>
+<h1>床头柜 F53（Hunyuan3D-Paint 真贴图）</h1>
+<model-viewer id="mv" alt="床头柜 F53 真贴图 3D 模型" camera-controls reveal="auto" loading="eager" shadow-intensity="0.6" exposure="1.1" camera-orbit="30deg 75deg auto" interaction-prompt="auto"></model-viewer>
+<script>var mv=document.getElementById("mv");mv.setAttribute("poster","poster.webp");mv.setAttribute("src","f53-paint.glb");</script></body></html>
