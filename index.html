@@ -17,4 +17,4 @@ model-viewer:not(:defined){background:var(--bg) url(poster.webp) center/contain 
 </head><body>
 <h1>床头柜 F53（Hunyuan3D-Paint 真贴图）</h1>
 <model-viewer id="mv" alt="床头柜 F53 真贴图 3D 模型" camera-controls reveal="auto" loading="eager" shadow-intensity="0.6" exposure="1.1" camera-orbit="30deg 75deg auto" interaction-prompt="auto"></model-viewer>
-<script>var mv=document.getElementById("mv");mv.setAttribute("poster","poster.webp");mv.setAttribute("src","f53-paint.glb");</script></body></html>
+<script>var mv=document.getElementById("mv");mv.setAttribute("poster","poster.webp");var J="https://cdn.jsdelivr.net/gh/binku87/f53-3d-demo@1727df5/f53-paint.glb",t=0;mv.addEventListener("error",function(){if(!t){t=1;mv.setAttribute("src","f53-paint.glb")}});mv.setAttribute("src",J);</script></body></html>
